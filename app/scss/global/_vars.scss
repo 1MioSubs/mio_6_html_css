@@ -1,20 +1,38 @@
-$accent: #000;
-$default: #000;
-$title: #000;
+$default: #fff;
+$menu-bg: #A3C1EF;
+$accent1: #99baed;
+$accent2: #d3e5ff;
+$accent3: #fafbff;
+$title: #163561;
+$title-span: #fbb400;
+$main-text: #153461;
 $bg: #000;
 
-
 %roboto-400 {
-  font-family: 'Roboto-Regular', sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   font-weight: 400;
 }
 
 %roboto-500 {
-  font-family: 'Roboto-Medium', sans-serif;
+  font-family: "Roboto-Medium", sans-serif;
   font-weight: 500;
 }
 
 %roboto-700 {
-  font-family: 'Roboto-Bold', sans-serif;
+  font-family: "Roboto-Bold", sans-serif;
   font-weight: 700;
+}
+
+%foto-bg {
+  background: rgba(82, 150, 255, 0.35);
+}
+
+%btn {
+  width: 188px;
+  height: 75px;
+  border-radius: 20px;
+  background: $accent1;
+  border-radius: 20px;
+  background: rgba(153, 186, 237, 0.5);
+  filter: blur(25px);
 }
