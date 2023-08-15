@@ -23,6 +23,21 @@ $bg: #000;
   font-weight: 700;
 }
 
+%catamaran-400 {
+  font-family: "Catamaran-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%catamaran-500 {
+  font-family: "Catamaran-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%catamaran-700 {
+  font-family: "Catamaran-Bold", sans-serif;
+  font-weight: 700;
+}
+
 %foto-bg {
   background: rgba(82, 150, 255, 0.35);
 }
