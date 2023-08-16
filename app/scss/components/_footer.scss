@@ -1,6 +1,8 @@
 .footer {
+  margin-top: 100px;
   &__inner {
     max-width: 1362px;
+    max-height: 330px;
     margin: 0 auto;
     text-align: center;
     border-bottom: 1px solid $accent1;

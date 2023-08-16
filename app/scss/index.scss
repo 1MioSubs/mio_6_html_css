@@ -6,6 +6,65 @@
 @import "components/header";
 @import "components/footer";
 
+.about {
+  margin-bottom: 226px;
+  &__inner {
+    display: flex;
+  }
+  &__info {
+    max-width: 576px;
+    margin-left: 188px;
+    margin-top: 102px;
+  }
+  &__title {
+    @extend %title;
+    font-size: 70px;
+    line-height: 133.6%;
+    margin-bottom: 29px;
+  }
+  &__text {
+    font-size: 25px;
+    line-height: 150.6%; /* 37.65px */
+    letter-spacing: 0.75px;
+    margin-bottom: 97px;
+  }
+  &__img {
+    margin-left: auto;
+  }
+  &__btn{
+    @extend %btn;
+  }
+}
 
+.history{
+  &__inner{
+    display: flex;
+    margin-bottom: 100px;
+  }
+  &__info{
+    max-width: 526px;
+    margin-left: 149px;
+    margin-top: 110px;
+  }
+  &__title {
+    @extend %title;
+    font-size: 70px;
+    line-height: 150.6%; /* 105.42px */
+    letter-spacing: 2.1px;  
+    margin-bottom: 80px;
+  }
+  &__text{
+    margin-bottom: 48px;
+  }
+  &__btn{
+    @extend %btn;
+    margin-top: 108px;
+  }
+  &__img{
+    min-width: 968px;
+    height: auto;
+    margin-left: 82px;
+  }
+}
 
 @import "global/media";
