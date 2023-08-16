@@ -3,17 +3,9 @@
 @import "global/fonts";
 @import "global/reset";
 @import "global/global";
+@import "components/header";
+@import "components/footer";
 
-.test {
-  @extend %btn;
-}
 
-.title{
-  @extend %title;
-}
-
-.test-img{
-  @extend %folio;
-}
 
 @import "global/media";
