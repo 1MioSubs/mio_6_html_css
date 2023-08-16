@@ -1,0 +1,59 @@
+.footer {
+  &__inner {
+    max-width: 1362px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid $accent1;
+    margin-bottom: 98px;
+  }
+  &__logo {
+    padding-left: 70px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 36px;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/logo-footer.svg);
+      top: -88px;
+      left: -32px;
+      width: 145px;
+      height: 150px;
+    }
+  }
+  &__text {
+    max-width: 526px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+    color: #153461;
+    text-align: center;
+    @extend %catamaran-400;
+    font-size: 25px;
+    font-style: normal;
+    line-height: 150.6%; /* 37.65px */
+    letter-spacing: 0.75px;
+  }
+  &__social {
+    display: flex;
+    gap: 25px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 47px;
+    &-item {
+      border-radius: 50%;
+      width: 67px;
+      height: 67px;
+      background-color: $accent2;
+      display: flex;
+      padding-top: 10px;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $accent1;
+      }
+    }
+    &-link {
+      margin-top: auto;
+    }
+  }
+}
