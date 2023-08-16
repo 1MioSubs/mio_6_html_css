@@ -1,5 +1,5 @@
 $default: #fff;
-$menu-bg: #A3C1EF;
+$menu-bg: #a3c1ef;
 $accent1: #99baed;
 $accent2: #d3e5ff;
 $accent3: #fafbff;
@@ -43,11 +43,57 @@ $bg: #000;
 }
 
 %btn {
+  @extend %catamaran-700;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 150.6%; /* 30.12px */
+  letter-spacing: 0.6px;
+  display: block;
   width: 188px;
   height: 75px;
+  color: $default;
   border-radius: 20px;
   background: $accent1;
-  border-radius: 20px;
-  background: rgba(153, 186, 237, 0.5);
-  filter: blur(25px);
+  text-align: center;
+  padding: 23px 33px;
+  box-shadow: 0 17px 30px 5px rgba(153, 186, 237, 0.5);
+}
+
+%title {
+  color: $title;
+  font-size: 70px;
+  @extend %catamaran-700;
+  line-height: normal;
+  font-style: normal;
+  & span {
+    color: #fbb400;
+  }
+}
+
+%menu {
+  color: #163561;
+  @extend %catamaran-500;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 133.6%; /* 33.4px */
+  &:hover{
+    color: #fff;
+  }
+}
+
+%folio{
+  max-width: 435px;
+  max-height: 435px;
+  position: relative;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(82, 150, 255, 0.35);;
+  }
 }

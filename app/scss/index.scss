@@ -4,6 +4,16 @@
 @import "global/reset";
 @import "global/global";
 
+.test {
+  @extend %btn;
+}
 
+.title{
+  @extend %title;
+}
+
+.test-img{
+  @extend %folio;
+}
 
 @import "global/media";
