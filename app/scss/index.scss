@@ -7,7 +7,7 @@
 @import "components/footer";
 
 .about {
-  margin-bottom: 226px;
+  // margin-bottom: 226px;
   &__inner {
     display: flex;
   }
@@ -37,6 +37,27 @@
 }
 
 .history {
+  padding-top: 226px;
+  position: relative;
+  &::after{
+    content: "";
+    background-image: url(../images/v-lt.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 283px;
+    height: 737px;
+  }
+  &::before{
+    content: "";
+    background-image: url(../images/v-rt.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 283px;
+    height: 737px;
+  }
+  // }width="283" height="737"
   &__inner {
     display: flex;
     margin-bottom: 100px;
@@ -68,6 +89,26 @@
 }
 
 .service {
+  padding-bottom: 272px;
+  position: relative;
+  &::after{
+    content: "";
+    background-image: url(../images/v-lb.svg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 283px;
+    height: 737px;
+  }
+  &::before{
+    content: "";
+    background-image: url(../images/v-rb.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 283px;
+    height: 737px;
+  }
   &__inner {
     text-align: center;
   }
@@ -83,7 +124,6 @@
   &__items {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 272px;
   }
   &__item {
     padding: 50px 41px 72px;
@@ -136,6 +176,25 @@
 }
 
 .gallery{
+  position: relative;
+  &::after{
+    content: "";
+    background-image: url(../images/v-lt.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 283px;
+    height: 737px;
+  }
+  &::before{
+    content: "";
+    background-image: url(../images/v-rt.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 283px;
+    height: 737px;
+  }
   &__inner{
     padding: 0 270px 188px;
     text-align: center;
