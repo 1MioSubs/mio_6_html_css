@@ -31,17 +31,17 @@
   &__img {
     margin-left: auto;
   }
-  &__btn{
+  &__btn {
     @extend %btn;
   }
 }
 
-.history{
-  &__inner{
+.history {
+  &__inner {
     display: flex;
     margin-bottom: 100px;
   }
-  &__info{
+  &__info {
     max-width: 526px;
     margin-left: 149px;
     margin-top: 110px;
@@ -50,20 +50,88 @@
     @extend %title;
     font-size: 70px;
     line-height: 150.6%; /* 105.42px */
-    letter-spacing: 2.1px;  
+    letter-spacing: 2.1px;
     margin-bottom: 80px;
   }
-  &__text{
+  &__text {
     margin-bottom: 48px;
   }
-  &__btn{
+  &__btn {
     @extend %btn;
     margin-top: 108px;
   }
-  &__img{
+  &__img {
     min-width: 968px;
     height: auto;
     margin-left: 82px;
+  }
+}
+
+.service {
+  &__inner {
+    text-align: center;
+  }
+  &__title {
+    @extend %title;
+    margin: 0 auto;
+    max-width: 390px;
+    line-height: 116.6%; /* 81.62px */
+    letter-spacing: 2.1px;
+    font-size: 70px;
+    margin-bottom: 83px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 272px;
+  }
+  &__item {
+    padding: 50px 41px 72px;
+    width: 440px;
+    background: #fafbff;
+    box-shadow: 0px 5px 0px 0px #99baed;
+    border-radius: 29px;
+    color: $main-text;
+    line-height: 150.6%; /* 37.65px */
+    letter-spacing: 0.75px;
+    &:hover {
+      color: #fff;
+      background-color: $accent1;
+      box-shadow: 15px 15px 100px 5px #99baed;
+    }
+    &-logo {
+      // background-size: cover;
+      width: 103px;
+      height: 126px;
+      border-radius: 13px;
+      background: #e5ecfe;
+      box-shadow: 0px 1px 0px 0px #008fdd;
+      background-image: url(../images/scissors.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 0 auto;
+      margin-bottom: 59px;
+    }
+    &-logo-1 {
+      background-image: url(../images/scissors.svg);
+    }
+    &-logo-2 {
+      background-image: url(../images/razor.svg);
+    }
+    &-logo-3 {
+      background-image: url(../images/cleanser.svg);
+    }
+    &-title {
+      // color: #163561;
+      text-align: center;
+      @extend %catamaran-700;
+      font-size: 45px;
+      font-style: normal;
+      line-height: 116.6%; /* 52.47px */
+      letter-spacing: 1.35px;
+      margin: 0 a;
+      margin-bottom: 60px;
+    }
   }
 }
 
